@@ -22,31 +22,52 @@ namespace NumericSequenceCalculator.Web.Controllers
 
         public async Task<ActionResult> GetAllNumbers(string number)
         {
-            string model = await _manager.GetAllNumberSequence(ulong.Parse(number));
+            ulong num;
+            if (string.IsNullOrWhiteSpace(number) || !ulong.TryParse(number, out num))
+                return View("PartialNumberSequenceResults");
+
+            string model = await _manager.GetAllNumberSequence(num);
             return PartialView("PartialNumberSequenceResults", model);
+            
         }
 
         public async Task<ActionResult> GetOddNumbers(string number)
         {
-            string model = await _manager.GetOddNumberSequence(ulong.Parse(number));
+            ulong num;
+            if (string.IsNullOrWhiteSpace(number) || !ulong.TryParse(number, out num))
+                return View("PartialNumberSequenceResults");
+
+            string model = await _manager.GetOddNumberSequence(num);
             return PartialView("PartialNumberSequenceResults", model);
         }
 
         public async Task<ActionResult> GetEvenNumbers(string number)
         {
-            string model = await _manager.GetEvenNumberSequence(ulong.Parse(number));
+            ulong num;
+            if (string.IsNullOrWhiteSpace(number) || !ulong.TryParse(number, out num))
+                return View("PartialNumberSequenceResults");
+
+            string model = await _manager.GetEvenNumberSequence(num);
             return PartialView("PartialNumberSequenceResults", model);
         }
 
         public async Task<ActionResult> GetAllNumbersMultiple(string number)
         {
-            string model = await _manager.GetAllNumberMultipleSequence(ulong.Parse(number));
+            ulong num;
+            if (string.IsNullOrWhiteSpace(number) || !ulong.TryParse(number, out num))
+                return View("PartialNumberSequenceResults");
+
+            string model = await _manager.GetAllNumberMultipleSequence(num);
             return PartialView("PartialNumberSequenceResults", model);
         }
 
         public async Task<ActionResult> GetFibonacciSequence(string number)
         {
-            string model = await _manager.GetFibonacciSequence(ulong.Parse(number));
+            ulong num;
+            if (string.IsNullOrWhiteSpace(number) || !ulong.TryParse(number, out num))
+                return View("PartialNumberSequenceResults");
+
+            string model = await _manager.GetFibonacciSequence(num);
             return PartialView("PartialNumberSequenceResults", model);
         }
     }
