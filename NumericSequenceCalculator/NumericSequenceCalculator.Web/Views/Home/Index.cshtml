@@ -1,0 +1,47 @@
+﻿@using NumericSequenceCalculator.Web.Models
+@{
+    ViewBag.Title = "Numeric Sequence Calculator";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+<h3>Please enter a positive whole numbers and click on the button to generate the sequence</h3>
+
+
+<div>
+
+    @Html.Partial("PartialNumberSequenceView", new SequenceNumber { ButtonName = "Get All Number Sequence", ActionName = "GetAllNumbers" })
+
+</div>
+
+<div>
+
+    @Html.Partial("PartialNumberSequenceView", new SequenceNumber { ButtonName = "Get Odd Number Sequence", ActionName = "GetOddNumbers" })
+
+</div>
+
+<div>
+
+    @Html.Partial("PartialNumberSequenceView", new SequenceNumber { ButtonName = "Get Even Number Sequence", ActionName = "GetEvenNumbers" })
+
+</div>
+
+
+<div>
+
+    @Html.Partial("PartialNumberSequenceView", new SequenceNumber { ButtonName = "Get All Number of Multiple Sequence", ActionName = "GetAllNumbersMultiple" })
+
+</div>
+
+<div>
+
+    @Html.Partial("PartialNumberSequenceView", new SequenceNumber { ButtonName = "Get Fibonacci Sequence", ActionName = "GetFibonacciSequence" })
+
+</div>

@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericSequenceCalculator.Web", "NumericSequenceCalculator.Web\NumericSequenceCalculator.Web.csproj", "{4B58B9B5-951A-4E5E-B8F7-8EB699417DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericSequenceCalculator.SequenceEngine", "NumericSequenceCalculator.SequenceEngine\NumericSequenceCalculator.SequenceEngine.csproj", "{A4F8D46B-B317-4498-9554-6B4123735C84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericSequenceCalculator.BLL", "NumericSequenceCalculator.BLL\NumericSequenceCalculator.BLL.csproj", "{5532D433-7689-4917-B74F-38FB20B6C753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericSequenceCalculator.Common", "NumericSequenceCalculator.Common\NumericSequenceCalculator.Common.csproj", "{E7D39A22-C832-422E-B87E-B81146FB9E5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{40A626A1-5C8F-4818-A874-B7D299B02492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericSequenceCalculator.SequenceEngine.Test", "NumericSequenceCalculator.SequenceEngine.Test\NumericSequenceCalculator.SequenceEngine.Test.csproj", "{28917D65-AF48-4E5B-AFC3-E507A7464C2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericSequenceCalculator.BLL.Test", "NumericSequenceCalculator.BLL.Test\NumericSequenceCalculator.BLL.Test.csproj", "{93A31BB6-55D4-4DBE-98E5-D0957FD83F7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericSequenceCalculator.Web.Test", "NumericSequenceCalculator.Web.Test\NumericSequenceCalculator.Web.Test.csproj", "{9EBDF79C-3FCB-4F97-9F73-08D996DB782E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F8A7BA56-2494-4D46-ABD3-ED1A5FEBA65B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B58B9B5-951A-4E5E-B8F7-8EB699417DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B58B9B5-951A-4E5E-B8F7-8EB699417DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B58B9B5-951A-4E5E-B8F7-8EB699417DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B58B9B5-951A-4E5E-B8F7-8EB699417DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F8D46B-B317-4498-9554-6B4123735C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F8D46B-B317-4498-9554-6B4123735C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F8D46B-B317-4498-9554-6B4123735C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F8D46B-B317-4498-9554-6B4123735C84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5532D433-7689-4917-B74F-38FB20B6C753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5532D433-7689-4917-B74F-38FB20B6C753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5532D433-7689-4917-B74F-38FB20B6C753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5532D433-7689-4917-B74F-38FB20B6C753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D39A22-C832-422E-B87E-B81146FB9E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D39A22-C832-422E-B87E-B81146FB9E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D39A22-C832-422E-B87E-B81146FB9E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D39A22-C832-422E-B87E-B81146FB9E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28917D65-AF48-4E5B-AFC3-E507A7464C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28917D65-AF48-4E5B-AFC3-E507A7464C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28917D65-AF48-4E5B-AFC3-E507A7464C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28917D65-AF48-4E5B-AFC3-E507A7464C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A31BB6-55D4-4DBE-98E5-D0957FD83F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A31BB6-55D4-4DBE-98E5-D0957FD83F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A31BB6-55D4-4DBE-98E5-D0957FD83F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A31BB6-55D4-4DBE-98E5-D0957FD83F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EBDF79C-3FCB-4F97-9F73-08D996DB782E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBDF79C-3FCB-4F97-9F73-08D996DB782E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBDF79C-3FCB-4F97-9F73-08D996DB782E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EBDF79C-3FCB-4F97-9F73-08D996DB782E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28917D65-AF48-4E5B-AFC3-E507A7464C2B} = {40A626A1-5C8F-4818-A874-B7D299B02492}
+		{93A31BB6-55D4-4DBE-98E5-D0957FD83F7F} = {40A626A1-5C8F-4818-A874-B7D299B02492}
+		{9EBDF79C-3FCB-4F97-9F73-08D996DB782E} = {40A626A1-5C8F-4818-A874-B7D299B02492}
+	EndGlobalSection
+EndGlobal

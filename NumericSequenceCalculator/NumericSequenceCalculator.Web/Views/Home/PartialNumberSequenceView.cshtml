@@ -1,0 +1,21 @@
+﻿@model NumericSequenceCalculator.Web.Models.SequenceNumber
+
+@{
+    ViewBag.Title = "PartialNumberSequenceView";
+}
+
+@using (Ajax.BeginForm(Model.ActionName, "Home", new AjaxOptions { UpdateTargetId = Model.ActionName }))
+{
+    
+    @Html.TextBoxFor(m=>m.Number, new{id="id"})
+    
+    <input type="submit" value="@Model.ButtonName" />
+    
+    @Html.ValidationMessageFor(m=> m.Number)
+
+    
+
+    <div id=@Model.ActionName>
+
+    </div>
+}
